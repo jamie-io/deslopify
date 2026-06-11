@@ -1,0 +1,163 @@
+# GitHub - zpix1/yt-anti-translate: Chrome extension to disable youtube video titles autotranslation · GitHub
+
+> Source: https://github.com/zpix1/yt-anti-translate
+> Cached: 2026-06-11T13:31:56.939Z
+
+---
+
+# YouTube Anti Translate
+
+[](#youtube-anti-translate)
+[](https://chromewebstore.google.com/detail/youtube-anti-translate/ndpmhjnlfkgfalaieeneneenijondgag)
+[](https://addons.mozilla.org/firefox/addon/youtube-anti-translate-mv3/)
+[](https://microsoftedge.microsoft.com/addons/detail/youtube-anti-translate/ifckldggiagmhblhahedklifdhpkcpje)
+## Overview
+
+[](#overview)
+Source code of [YouTube Anti Translate](https://chrome.google.com/webstore/detail/yt-anti-translate/ndpmhjnlfkgfalaieeneneenijondgag) Chromium Extension created by [zpix1](https://github.com/zpix1),
+And [YouTube Anti Translate - mv3](https://addons.mozilla.org/firefox/addon/youtube-anti-translate-mv3/) Firefox Extension mantained by [namakeingo](https://github.com/namakeingo).
+Also available on the [Microsoft Edge Store](https://microsoftedge.microsoft.com/addons/detail/youtube-anti-translate/ifckldggiagmhblhahedklifdhpkcpje).
+All the people involved were annoyed by YouTube changing video titles to poorly user-translated versions. While it might be useful if you do not know the language, it quickly becomes annoying once you do.
+As there is no option provided by YouTube to disable it, we made this extension to retrieve original titles and change them back.
+As YouTube later got even more annoying with translated descriptions, audio (dubbing) and channel branding, the extension was expanded to untranslate that too.
+It is much easier to use than its analogues (such as [YoutubeAutotranslateCanceler](https://github.com/pcouy/YoutubeAutotranslateCanceler)), because it does not require any YouTube API keys (for core features) or additional userscript extensions.
+
+## Features
+
+[](#features)
+
+- Restores original video titles on YouTube (can be toggled in settings "Untranslate titles")
+
+- Restores original video descriptions on YouTube (can be toggled in settings "Untranslate description")
+
+- Restores original video chapters (can be toggled in settings "Untranslate video chapters")
+
+- Disables automatic audio (dubbing) translation (can be toggled in settings "Untranslate audio track")
+
+- Restores original video thumbnails on YouTube (can be toggled in settings "Untranslate video thumbnails")
+
+- Restores original channel branding header and about on YouTube (can be toggled in settings "Untranslate channel branding")
+
+- Restores original channels' names everywhere else
+
+- Untranslates YouTube Shorts audio and titles
+
+- Works on m.youtube.com too (some mobile features are still unsupported and/or experimental)
+
+- Works on youtube-nocookie.com
+
+- Works on embeded YouTube videos
+
+- Works automatically without any configuration
+
+- "Advanced Settings" to allow translations for specified channels (using the @ handle of any channel)
+
+Warning
+
+For compatibility with [DeArrow](https://github.com/ajayyy/DeArrow) it is recommended do disable "Untranslate titles" and "Untranslate video thumbnails".
+You can then use [DeArrow](https://github.com/ajayyy/DeArrow)'s options page, under "Behavior" menu section, and enable "Default to Original Video Information" to still have translated titles and thumbnail from [DeArrow](https://github.com/ajayyy/DeArrow).
+
+### Enhanced Features Reliability Option
+
+[](#enhanced-features-reliability-option)
+In the extension settings, you can optionally provide a YouTube Data API Key. Although this is optional, it is reccomended.
+
+When that is populated, some features work more reliably.
+[Read more on how to obtain](https://github.com/zpix1/yt-anti-translate/blob/main/YOUTUBE_DATA_API_KEY.md)
+## How to use
+
+[](#how-to-use)
+If using Chrome/Edge or other Chromium browsers, install it from [Chrome Web Store](https://chrome.google.com/webstore/detail/yt-anti-translate/ndpmhjnlfkgfalaieeneneenijondgag).
+If using a Firefox browser, install it from [Firefox Extensions Store](https://addons.mozilla.org/firefox/addon/youtube-anti-translate-mv3/).
+There's also a [Firefox Manifest v3 version](https://addons.mozilla.org/firefox/addon/youtube-anti-translate/) (maintained by [artisticfox8](https://github.com/artisticfox8/)) since 2021. Currently it is mostly the same as the Chrome version, but it used to include a number of Firefox specific fixes in the past.
+
+### Development Setup
+
+[](#development-setup)
+
+- Clone this repository
+
+Navigate to the cloned folder and run the following command in a terminal window
+`npm ci`
+- Open with the IDE editor of choice
+
+You can verify functionality by running Playwright Test (make sure you install Playwright extensions for your IDE if needed)
+
+Before running the tests, you will need to install playwright browsers and dependencies
+`npx playwright install --with-deps`
+- Please create or update tests if adding new capabilities
+
+For running tests on your machine you need a `.env` file with values for `GOOGLE_USER`, `GOOGLE_PWD` and `GOOGLE_OTP_SECRET`.
+> 
+[!NOTE]
+These `.env` values should be valid credentials to a Google (YouTube) Account with 2FA OTP enabled and OTP as the highest level of security on the account (aka no "Google prompt" or "Passkeys and security keys" configured).
+`GOOGLE_OTP_SECRET` is the "secret" query parameter of the QR Code that is provided when configuring the 2FA OTP Authenticathor. You can use a QR Code reader to read the text value.
+It is recommended that you create a test account for this purpose.
+
+#### Testing in Browser
+
+[](#testing-in-browser)
+
+Chrome
+
+- Open Chrome and navigate to `chrome://extensions/`
+
+- Enable "Developer mode"
+
+- Click "Load unpacked" and select the `app` directory from this repository
+
+Firefox
+
+- Create a `.zip` of `app` directory (Note that `manifest.json` must be at the root of the archive)
+
+- Open Firefox and navigate to `about:addons`
+
+- Click the gear icon, click on "Install Add-on from File", select the zip file you created in step 1
+
+## Contributing
+
+[](#contributing)
+Contributions are welcome! Here's how you can help:
+
+- **Report bugs**: If you find any issues, please open an issue in this repository
+
+- **Suggest features**: Have an idea to improve the extension? Let me know by opening an issue
+
+- **Submit code**: Feel free to fork the repository and submit pull requests
+
+- **Join our Discord server**: You can also join our [Discord server](https://discord.gg/B2aaaEdmEw) to discuss development and contribute.
+
+## Support
+
+[](#support)
+If this extension really helped you, consider supporting the original creator [at their donation page](https://zpix1.github.io/donate/).
+
+You can also show your support by:
+
+- Starring this repository on GitHub
+
+- Submitting a positive review for the extension on the [Chrome Web Store](https://chrome.google.com/webstore/detail/yt-anti-translate/ndpmhjnlfkgfalaieeneneenijondgag)
+
+- Submitting a positive review for the extension on the [Firefox Extension Store](https://addons.mozilla.org/firefox/addon/youtube-anti-translate-mv3/)
+
+### Contributors
+
+[](#contributors)
+
+[namakeingo](https://github.com/namakeingo) - Collaborator and Main Maintainer - Firefox MV3 Developer
+
+- [Donate to namakeingo](https://github.com/sponsors/namakeingo)
+
+- Star the fork [namakeingo/yt-anti-translate-firefox](https://github.com/namakeingo/yt-anti-translate-firefox)
+
+[artisticfox8](https://github.com/artisticfox8/yt-anti-translate) - Firefox MV3 Developer
+
+- Star the fork [artisticfox8/yt-anti-translate](https://github.com/artisticfox8/yt-anti-translate)
+
+- [ajayyy](https://github.com/ayayyy) - DeArrow compatibility [#18](https://github.com/zpix1/yt-anti-translate/pull/18) & [#20](https://github.com/zpix1/yt-anti-translate/pull/20)
+
+- [YuriiMaiboroda](https://github.com/YuriiMaiboroda) - Fix translating for playlist panel [#14](https://github.com/zpix1/yt-anti-translate/pull/14)
+
+- [BlackLanzer](https://github.com/BlackLanzer) - Translate title attribute [#24](https://github.com/zpix1/yt-anti-translate/pull/24)
+
+- [NRngnl](https://github.com/NRngnl) - Replace 'chrome.extension.getURL' with 'chrome.runtime.getURL' [#12](https://github.com/zpix1/yt-anti-translate/pull/12)

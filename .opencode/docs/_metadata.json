@@ -1,0 +1,68 @@
+{
+  "documents": {
+    "developer_chrome_com_docs_extensions_develop_concepts_content-scripts.md": {
+      "url": "https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts",
+      "title": "Content scripts &nbsp;|&nbsp; Chrome for Developers",
+      "fetchedAt": "2026-06-11T13:31:12.150Z",
+      "expiresAt": "2026-06-12T13:31:12.150Z",
+      "size": 15209
+    },
+    "developer_mozilla_org_en-US_docs_Mozilla_Add-ons_WebExtensions_Intercept.md": {
+      "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Intercept_HTTP_requests",
+      "title": "Intercept HTTP requests - Mozilla | MDN",
+      "fetchedAt": "2026-06-11T13:31:24.348Z",
+      "expiresAt": "2026-06-12T13:31:24.348Z",
+      "size": 8858
+    },
+    "www_reddit_com_r_youtube_comments_1kx7y8n_how_to_disable_auto_tra.md": {
+      "url": "https://www.reddit.com/r/youtube/comments/1kx7y8n/how_to_disable_auto_translation_of_video_titles/",
+      "title": "Reddit - Please wait for verification",
+      "fetchedAt": "2026-06-11T13:31:29.636Z",
+      "expiresAt": "2026-06-12T13:31:29.636Z",
+      "size": 191
+    },
+    "chromewebstore_google_com_search_youtube20translation20fix.md": {
+      "url": "https://chromewebstore.google.com/search/youtube%20translation%20fix",
+      "title": "Chrome Web Store - Search Results",
+      "fetchedAt": "2026-06-11T13:31:43.417Z",
+      "expiresAt": "2026-06-12T13:31:43.417Z",
+      "size": 5003
+    },
+    "github_com_zpix1_yt-anti-translate.md": {
+      "url": "https://github.com/zpix1/yt-anti-translate",
+      "title": "GitHub - zpix1/yt-anti-translate: Chrome extension to disable youtube video titles autotranslation · GitHub",
+      "fetchedAt": "2026-06-11T13:31:56.939Z",
+      "expiresAt": "2026-06-12T13:31:56.939Z",
+      "size": 8171
+    },
+    "raw_githubusercontent_com_zpix1_yt-anti-translate_main_app_manifestjson.md": {
+      "url": "https://raw.githubusercontent.com/zpix1/yt-anti-translate/main/app/manifest.json",
+      "title": "Plain Text",
+      "fetchedAt": "2026-06-11T13:32:00.068Z",
+      "expiresAt": "2026-06-12T13:32:00.068Z",
+      "size": 2037
+    },
+    "raw_githubusercontent_com_zpix1_yt-anti-translate_main_app_src_content_start.md": {
+      "url": "https://raw.githubusercontent.com/zpix1/yt-anti-translate/main/app/src/content_start.js",
+      "title": "Plain Text",
+      "fetchedAt": "2026-06-11T13:32:02.770Z",
+      "expiresAt": "2026-06-12T13:32:02.770Z",
+      "size": 2775
+    },
+    "raw_githubusercontent_com_zpix1_yt-anti-translate_main_app_src_globaljs.md": {
+      "url": "https://raw.githubusercontent.com/zpix1/yt-anti-translate/main/app/src/global.js",
+      "title": "Plain Text",
+      "fetchedAt": "2026-06-11T13:32:03.624Z",
+      "expiresAt": "2026-06-12T13:32:03.624Z",
+      "size": 76033
+    },
+    "raw_githubusercontent_com_zpix1_yt-anti-translate_main_app_src_backgroundjs.md": {
+      "url": "https://raw.githubusercontent.com/zpix1/yt-anti-translate/main/app/src/background.js",
+      "title": "Plain Text",
+      "fetchedAt": "2026-06-11T13:32:06.112Z",
+      "expiresAt": "2026-06-12T13:32:06.112Z",
+      "size": 90401
+    }
+  },
+  "lastUpdated": "2026-06-11T13:32:06.112Z"
+}
