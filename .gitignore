@@ -84,3 +84,7 @@ _metadata/
 .env
 .env.*
 !.env.example
+
+# Local tooling artifacts
+.graphene/
+.opencode/
