@@ -19,7 +19,7 @@
     "verify": "npm run versioncheck && npm run lint && npm run typecheck && npm test && npm run test:spike && npm run build"
   },
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.63.0",
     "esbuild": "^0.27.7",
     "eslint": "^9.27.0",
     "typescript": "^5.9.3",
